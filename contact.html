@@ -5,6 +5,95 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact | Portfolio</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    .contact-page h1 {
+      margin-bottom: 2rem;
+    }
+
+    .contact-wrapper {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+      max-width: 700px;
+    }
+
+    .contact-left {
+      background: #1a1a2e;
+      border-radius: 16px;
+      padding: 24px;
+    }
+
+    .contact-left h2 {
+      color: #ffffff;
+      font-size: 1.1rem;
+      font-weight: 600;
+      margin: 0 0 20px;
+    }
+
+    .contact-item {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 16px;
+    }
+
+    .contact-item .c-icon {
+      font-size: 1.1rem;
+      width: 22px;
+      text-align: center;
+    }
+
+    .contact-item .c-text {
+      font-size: 0.85rem;
+      color: #cccccc;
+    }
+
+    .contact-right {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+
+    .social-card {
+      background: #ffffff;
+      border: 1px solid #e5e5e5;
+      border-radius: 12px;
+      padding: 14px 16px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      text-decoration: none;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      transition: transform 0.15s, box-shadow 0.15s;
+    }
+
+    .social-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 6px 16px rgba(0,0,0,0.10);
+    }
+
+    .social-card .s-icon {
+      font-size: 1.5rem;
+    }
+
+    .social-card .s-label {
+      font-size: 0.75rem;
+      color: #888;
+      margin-bottom: 2px;
+    }
+
+    .social-card .s-value {
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: #185FA5;
+    }
+
+    @media (max-width: 600px) {
+      .contact-wrapper {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
 </head>
 <body>
 
@@ -23,28 +112,60 @@
 
 <section class="contact-page">
   <h1>Contact</h1>
-<div class="contact-details">
 
-  <p><strong>Name:</strong> Mayureshwar Pawar</p>
+  <div class="contact-wrapper">
 
-  <p><strong>Email:</strong> mayursakhi6@gmail.com</p>
+    <!-- Left: Personal Info -->
+    <div class="contact-left">
+      <h2>Contact Info</h2>
+      <div class="contact-item">
+        <span class="c-icon">👤</span>
+        <span class="c-text">Mayureshwar Pawar</span>
+      </div>
+      <div class="contact-item">
+        <span class="c-icon">✉️</span>
+        <span class="c-text">mayursakhi6@gmail.com</span>
+      </div>
+      <div class="contact-item">
+        <span class="c-icon">📞</span>
+        <span class="c-text">+91 8262882002</span>
+      </div>
+      <div class="contact-item">
+        <span class="c-icon">📍</span>
+        <span class="c-text">Pune, Maharashtra, India</span>
+      </div>
+    </div>
 
-  <p><strong>Phone:</strong> +91 8262882002</p>
+    <!-- Right: Social Links -->
+    <div class="contact-right">
 
-  <p><strong>Location:</strong> Pune, Maharashtra, India</p>
+      <a class="social-card" href="https://www.linkedin.com/in/mayureshwar-pawar-181ab7392/" target="_blank">
+        <span class="s-icon">💼</span>
+        <div>
+          <div class="s-label">LinkedIn</div>
+          <div class="s-value">/in/mayureshwar</div>
+        </div>
+      </a>
 
-  <p><strong>LinkedIn:</strong> 
-  <a href="https://www.linkedin.com/in/mayureshwar-pawar-181ab7392/" target="_blank">linkedin.com/in/mayureshwar</a></p>
+      <a class="social-card" href="https://github.com/mayureshwar120" target="_blank">
+        <span class="s-icon">🐙</span>
+        <div>
+          <div class="s-label">GitHub</div>
+          <div class="s-value">mayureshwar120</div>
+        </div>
+      </a>
 
-  <p><strong>GitHub:</strong> 
-  <a href="https://github.com/mayureshwar120" target="_blank">github.com/mayureshwar</a></p>
+      <a class="social-card" href="https://leetcode.com/u/mayurpawar00/" target="_blank">
+        <span class="s-icon">🧠</span>
+        <div>
+          <div class="s-label">LeetCode</div>
+          <div class="s-value">mayurpawar00</div>
+        </div>
+      </a>
 
-  <p><strong>Leetcode:</strong> 
-  <a href="https://leetcode.com/u/mayurpawar00/" target="_blank">Leetcode.com/mayureshwar</a></p>
-
-</div>
- </section>
+    </div>
+  </div>
+</section>
 
 </body>
 </html>
-
