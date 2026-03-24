@@ -30,20 +30,27 @@
     .bar-tech { background-color: #185FA5; }
     .bar-soft { background-color: #0F6E56; }
 
+    .skills-divider {
+      height: 1px;
+      background: #e5e5e5;
+      margin: 1rem 0 2rem;
+    }
+
+    /* ── CARD GRID ── */
     .skills-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
-      gap: 14px;
+      grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+      gap: 16px;
       margin-bottom: 1.5rem;
     }
 
     .skill-card {
       background: #ffffff;
       border: 1px solid #e5e5e5;
-      border-radius: 12px;
-      padding: 1rem 0.75rem;
+      border-radius: 14px;
+      padding: 1.2rem 1rem;
       text-align: center;
-      font-size: 0.85rem;
+      font-size: 0.88rem;
       font-weight: 600;
       color: #1a1a2e;
       box-shadow: 0 2px 8px rgba(0,0,0,0.05);
@@ -56,15 +63,42 @@
     }
 
     .skill-card .skill-icon {
-      font-size: 1.6rem;
+      font-size: 1.8rem;
       margin-bottom: 8px;
       display: block;
     }
 
-    .skills-divider {
-      height: 1px;
-      background: #e5e5e5;
-      margin: 1rem 0 2rem;
+    .skill-card .skill-name {
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    /* ── PROGRESS BAR ── */
+    .progress-wrap {
+      background: #f0f0f0;
+      border-radius: 999px;
+      height: 6px;
+      width: 100%;
+      overflow: hidden;
+    }
+
+    .progress-fill {
+      height: 100%;
+      border-radius: 999px;
+      width: 0%;
+      transition: width 1.2s ease-in-out;
+    }
+
+    .progress-fill.tech { background: #185FA5; }
+    .progress-fill.soft { background: #0F6E56; }
+
+    .progress-label {
+      font-size: 0.72rem;
+      color: #888;
+      margin-top: 5px;
+      display: block;
+      text-align: right;
+      font-weight: 500;
     }
   </style>
 </head>
@@ -90,30 +124,63 @@
     Technical Skills <span class="bar bar-tech"></span>
   </div>
   <div class="skills-grid">
+
     <div class="skill-card">
-      <span class="skill-icon">💻</span>C / C++
+      <span class="skill-icon">💻</span>
+      <span class="skill-name">C / C++</span>
+      <div class="progress-wrap"><div class="progress-fill tech" data-width="85"></div></div>
+      <span class="progress-label">85%</span>
     </div>
+
     <div class="skill-card">
-      <span class="skill-icon">🐍</span>Python
+      <span class="skill-icon">🐍</span>
+      <span class="skill-name">Python</span>
+      <div class="progress-wrap"><div class="progress-fill tech" data-width="80"></div></div>
+      <span class="progress-label">80%</span>
     </div>
+
     <div class="skill-card">
-      <span class="skill-icon">🎨</span>CSS
+      <span class="skill-icon">🎨</span>
+      <span class="skill-name">CSS</span>
+      <div class="progress-wrap"><div class="progress-fill tech" data-width="75"></div></div>
+      <span class="progress-label">75%</span>
     </div>
+
     <div class="skill-card">
-      <span class="skill-icon">📄</span>HTML
+      <span class="skill-icon">📄</span>
+      <span class="skill-name">HTML</span>
+      <div class="progress-wrap"><div class="progress-fill tech" data-width="80"></div></div>
+      <span class="progress-label">80%</span>
     </div>
+
     <div class="skill-card">
-      <span class="skill-icon">📊</span>Excel
+      <span class="skill-icon">📊</span>
+      <span class="skill-name">Excel</span>
+      <div class="progress-wrap"><div class="progress-fill tech" data-width="85"></div></div>
+      <span class="progress-label">85%</span>
     </div>
+
     <div class="skill-card">
-      <span class="skill-icon">🗄️</span>SQL
+      <span class="skill-icon">🗄️</span>
+      <span class="skill-name">SQL</span>
+      <div class="progress-wrap"><div class="progress-fill tech" data-width="70"></div></div>
+      <span class="progress-label">70%</span>
     </div>
+
     <div class="skill-card">
-      <span class="skill-icon">📈</span>Power BI
+      <span class="skill-icon">📈</span>
+      <span class="skill-name">Power BI</span>
+      <div class="progress-wrap"><div class="progress-fill tech" data-width="70"></div></div>
+      <span class="progress-label">70%</span>
     </div>
+
     <div class="skill-card">
-      <span class="skill-icon">🔍</span>Data Analysis
+      <span class="skill-icon">🔍</span>
+      <span class="skill-name">Data Analysis</span>
+      <div class="progress-wrap"><div class="progress-fill tech" data-width="80"></div></div>
+      <span class="progress-label">80%</span>
     </div>
+
   </div>
 
   <div class="skills-divider"></div>
@@ -122,27 +189,68 @@
     Soft Skills <span class="bar bar-soft"></span>
   </div>
   <div class="skills-grid">
-    <div class="skill-card">
-      <span class="skill-icon">⏰</span>Time Management
-    </div>
-    <div class="skill-card">
-      <span class="skill-icon">🧩</span>Problem Solving
-    </div>
-    <div class="skill-card">
-      <span class="skill-icon">💬</span>Communication
-    </div>
-    <div class="skill-card">
-      <span class="skill-icon">🤝</span>Teamwork
-    </div>
-    <div class="skill-card">
-      <span class="skill-icon">🌟</span>Leadership
-    </div>
-    <div class="skill-card">
-      <span class="skill-icon">🔄</span>Adaptability
-    </div>
-  </div>
 
+    <div class="skill-card">
+      <span class="skill-icon">⏰</span>
+      <span class="skill-name">Time Management</span>
+      <div class="progress-wrap"><div class="progress-fill soft" data-width="90"></div></div>
+      <span class="progress-label">90%</span>
+    </div>
+
+    <div class="skill-card">
+      <span class="skill-icon">🧩</span>
+      <span class="skill-name">Problem Solving</span>
+      <div class="progress-wrap"><div class="progress-fill soft" data-width="85"></div></div>
+      <span class="progress-label">85%</span>
+    </div>
+
+    <div class="skill-card">
+      <span class="skill-icon">💬</span>
+      <span class="skill-name">Communication</span>
+      <div class="progress-wrap"><div class="progress-fill soft" data-width="80"></div></div>
+      <span class="progress-label">80%</span>
+    </div>
+
+    <div class="skill-card">
+      <span class="skill-icon">🤝</span>
+      <span class="skill-name">Teamwork</span>
+      <div class="progress-wrap"><div class="progress-fill soft" data-width="90"></div></div>
+      <span class="progress-label">90%</span>
+    </div>
+
+    <div class="skill-card">
+      <span class="skill-icon">🌟</span>
+      <span class="skill-name">Leadership</span>
+      <div class="progress-wrap"><div class="progress-fill soft" data-width="75"></div></div>
+      <span class="progress-label">75%</span>
+    </div>
+
+    <div class="skill-card">
+      <span class="skill-icon">🔄</span>
+      <span class="skill-name">Adaptability</span>
+      <div class="progress-wrap"><div class="progress-fill soft" data-width="85"></div></div>
+      <span class="progress-label">85%</span>
+    </div>
+
+  </div>
 </section>
+
+<script>
+  // Animate progress bars when they come into view
+  const fills = document.querySelectorAll('.progress-fill');
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const el = entry.target;
+        el.style.width = el.getAttribute('data-width') + '%';
+        observer.unobserve(el);
+      }
+    });
+  }, { threshold: 0.3 });
+
+  fills.forEach(fill => observer.observe(fill));
+</script>
 
 </body>
 </html>
