@@ -6,27 +6,65 @@
   <title>Skills | Portfolio</title>
   <link rel="stylesheet" href="style.css">
   <style>
+    .skills-page h1 {
+      margin-bottom: 2rem;
+    }
+
     .skills-section-title {
-      font-size: 1.2rem;
+      font-size: 1.1rem;
       font-weight: 600;
-      margin: 2rem 0 1rem;
       color: #1a1a2e;
-      border-left: 4px solid #4e54c8;
-      padding-left: 0.75rem;
+      margin: 2rem 0 0.5rem;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .skills-section-title .bar {
+      height: 3px;
+      width: 40px;
+      border-radius: 2px;
+      display: inline-block;
+    }
+
+    .bar-tech { background-color: #185FA5; }
+    .bar-soft { background-color: #0F6E56; }
+
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+      gap: 14px;
+      margin-bottom: 1.5rem;
+    }
+
+    .skill-card {
+      background: #ffffff;
+      border: 1px solid #e5e5e5;
+      border-radius: 12px;
+      padding: 1rem 0.75rem;
+      text-align: center;
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: #1a1a2e;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      transition: transform 0.15s, box-shadow 0.15s;
+    }
+
+    .skill-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.10);
+    }
+
+    .skill-card .skill-icon {
+      font-size: 1.6rem;
+      margin-bottom: 8px;
+      display: block;
     }
 
     .skills-divider {
       height: 1px;
-      background: #ddd;
-      margin: 2rem 0;
-    }
-
-    .skill-card.tech {
-      border-top: 3px solid #185FA5;
-    }
-
-    .skill-card.soft {
-      border-top: 3px solid #0F6E56;
+      background: #e5e5e5;
+      margin: 1rem 0 2rem;
     }
   </style>
 </head>
@@ -48,28 +86,60 @@
 <section class="skills-page">
   <h1>Skills</h1>
 
-  <p class="skills-section-title">Technical Skills</p>
+  <div class="skills-section-title">
+    Technical Skills <span class="bar bar-tech"></span>
+  </div>
   <div class="skills-grid">
-    <div class="skill-card tech">C / C++</div>
-    <div class="skill-card tech">Python</div>
-    <div class="skill-card tech">CSS</div>
-    <div class="skill-card tech">HTML</div>
-    <div class="skill-card tech">Excel</div>
-    <div class="skill-card tech">SQL</div>
-    <div class="skill-card tech">Power BI</div>
-    <div class="skill-card tech">Data Analysis</div>
+    <div class="skill-card">
+      <span class="skill-icon">💻</span>C / C++
+    </div>
+    <div class="skill-card">
+      <span class="skill-icon">🐍</span>Python
+    </div>
+    <div class="skill-card">
+      <span class="skill-icon">🎨</span>CSS
+    </div>
+    <div class="skill-card">
+      <span class="skill-icon">📄</span>HTML
+    </div>
+    <div class="skill-card">
+      <span class="skill-icon">📊</span>Excel
+    </div>
+    <div class="skill-card">
+      <span class="skill-icon">🗄️</span>SQL
+    </div>
+    <div class="skill-card">
+      <span class="skill-icon">📈</span>Power BI
+    </div>
+    <div class="skill-card">
+      <span class="skill-icon">🔍</span>Data Analysis
+    </div>
   </div>
 
   <div class="skills-divider"></div>
 
-  <p class="skills-section-title">Soft Skills</p>
+  <div class="skills-section-title">
+    Soft Skills <span class="bar bar-soft"></span>
+  </div>
   <div class="skills-grid">
-    <div class="skill-card soft">Time Management</div>
-    <div class="skill-card soft">Problem Solving</div>
-    <div class="skill-card soft">Communication</div>
-    <div class="skill-card soft">Teamwork</div>
-    <div class="skill-card soft">Leadership</div>
-    <div class="skill-card soft">Adaptability</div>
+    <div class="skill-card">
+      <span class="skill-icon">⏰</span>Time Management
+    </div>
+    <div class="skill-card">
+      <span class="skill-icon">🧩</span>Problem Solving
+    </div>
+    <div class="skill-card">
+      <span class="skill-icon">💬</span>Communication
+    </div>
+    <div class="skill-card">
+      <span class="skill-icon">🤝</span>Teamwork
+    </div>
+    <div class="skill-card">
+      <span class="skill-icon">🌟</span>Leadership
+    </div>
+    <div class="skill-card">
+      <span class="skill-icon">🔄</span>Adaptability
+    </div>
   </div>
 
 </section>
