@@ -7,88 +7,90 @@
   <link rel="stylesheet" href="style.css">
   <style>
     .contact-page h1 {
-      margin-bottom: 2rem;
+      margin-bottom: 2.5rem;
     }
 
     .contact-wrapper {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 20px;
-      max-width: 700px;
+      gap: 24px;
+      max-width: 900px;
+      width: 100%;
     }
 
     .contact-left {
       background: #1a1a2e;
-      border-radius: 16px;
-      padding: 24px;
+      border-radius: 20px;
+      padding: 36px 32px;
     }
 
     .contact-left h2 {
       color: #ffffff;
-      font-size: 1.1rem;
-      font-weight: 600;
-      margin: 0 0 20px;
+      font-size: 1.4rem;
+      font-weight: 700;
+      margin: 0 0 28px;
     }
 
     .contact-item {
       display: flex;
       align-items: center;
-      gap: 10px;
-      margin-bottom: 16px;
+      gap: 14px;
+      margin-bottom: 22px;
     }
 
     .contact-item .c-icon {
-      font-size: 1.1rem;
-      width: 22px;
+      font-size: 1.4rem;
+      width: 28px;
       text-align: center;
     }
 
     .contact-item .c-text {
-      font-size: 0.85rem;
+      font-size: 1rem;
       color: #cccccc;
     }
 
     .contact-right {
       display: flex;
       flex-direction: column;
-      gap: 14px;
+      gap: 18px;
     }
 
     .social-card {
       background: #ffffff;
       border: 1px solid #e5e5e5;
-      border-radius: 12px;
-      padding: 14px 16px;
+      border-radius: 16px;
+      padding: 22px 24px;
       display: flex;
       align-items: center;
-      gap: 12px;
+      gap: 18px;
       text-decoration: none;
       box-shadow: 0 2px 8px rgba(0,0,0,0.05);
       transition: transform 0.15s, box-shadow 0.15s;
+      flex: 1;
     }
 
     .social-card:hover {
-      transform: translateY(-3px);
-      box-shadow: 0 6px 16px rgba(0,0,0,0.10);
+      transform: translateY(-4px);
+      box-shadow: 0 8px 24px rgba(0,0,0,0.12);
     }
 
     .social-card .s-icon {
-      font-size: 1.5rem;
+      font-size: 2rem;
     }
 
     .social-card .s-label {
-      font-size: 0.75rem;
+      font-size: 0.85rem;
       color: #888;
-      margin-bottom: 2px;
+      margin-bottom: 4px;
     }
 
     .social-card .s-value {
-      font-size: 0.9rem;
-      font-weight: 600;
+      font-size: 1.1rem;
+      font-weight: 700;
       color: #185FA5;
     }
 
-    @media (max-width: 600px) {
+    @media (max-width: 650px) {
       .contact-wrapper {
         grid-template-columns: 1fr;
       }
