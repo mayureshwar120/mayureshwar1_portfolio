@@ -5,7 +5,76 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>About Me | Portfolio</title>
   <link rel="stylesheet" href="style.css">
+
+  <style>
+    .about-page {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 60px 10%;
+      gap: 40px;
+    }
+
+    .about-text {
+      max-width: 600px;
+    }
+
+    .about-text h1 {
+      font-size: 48px;
+      color: orange;
+      margin-bottom: 20px;
+    }
+
+    .about-text p {
+      margin-bottom: 15px;
+      line-height: 1.6;
+      font-size: 16px;
+    }
+
+    .about-text strong {
+      color: orange;
+    }
+
+    .about-info {
+      margin-top: 20px;
+    }
+
+    .about-info p {
+      margin-bottom: 8px;
+      font-size: 15px;
+    }
+
+    .about-highlight img {
+      width: 300px;
+      border-radius: 20px;
+      box-shadow: 0px 10px 30px rgba(0,0,0,0.2);
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      padding: 20px 10%;
+      align-items: center;
+    }
+
+    .logo {
+      font-weight: bold;
+      font-size: 22px;
+    }
+
+    nav ul {
+      display: flex;
+      list-style: none;
+      gap: 20px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: black;
+    }
+  </style>
 </head>
+
 <body>
 
 <header>
@@ -22,19 +91,49 @@
 </header>
 
 <section class="about-page">
-<div class="about-text">
-  <h1>About Me</h1>
-  <p>
-   Aspiring Data Analyst with a strong interest in programming and problem-solving. Skilled in C++ and currently learning Excel, Power BI, and Python to turn data into meaningful insights and build impactful solutions.
-  </p>
-</div>
-  <div class="about-highlight"> <img src="mayur.jpg" alt="My Photo">
-</div>
+
+  <div class="about-text">
+    <h1>About Me</h1>
+
+    <p>
+      Hello! I'm <strong>Mayureshwar Pawar</strong>, an aspiring Data Analyst passionate about transforming raw data into meaningful insights. I enjoy solving real-world problems using data and continuously improving my technical skills.
+    </p>
+
+    <p>
+      I have a strong foundation in <strong>C++</strong> and am currently expanding my expertise in 
+      <strong>Python, Excel, and Power BI</strong>. I love working with data, creating dashboards, 
+      and uncovering trends that help in better decision-making.
+    </p>
+
+    <p>
+      I have worked on projects like <strong>PayTrack</strong> and a <strong>Data Analysis Web App</strong>, 
+      where I implemented features like data visualization, report generation, and AI-based insights. 
+      These projects helped me understand both frontend and backend integration.
+    </p>
+
+    <p>
+      Apart from technical skills, I am a quick learner, problem-solver, and someone who enjoys 
+      exploring new technologies. I am currently looking for <strong>internship opportunities</strong> 
+      where I can apply my skills and grow in the field of data analytics.
+    </p>
+
+    <p>
+      My goal is to become a skilled Data Analyst and contribute to building data-driven solutions 
+      that create real impact.
+    </p>
+
+    <div class="about-info">
+      <p><strong>Education:</strong> MIT Academy of Engineering</p>
+      <p><strong>Email:</strong> mayursakhi6@gmail.com</p>
+      <p><strong>Skills:</strong> C++, Python, Excel, Power BI, HTML, CSS</p>
+    </div>
+  </div>
+
+  <div class="about-highlight">
+    <img src="mayur.jpg" alt="My Photo">
+  </div>
+
 </section>
 
 </body>
 </html>
-
-
-
-
