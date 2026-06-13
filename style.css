@@ -149,7 +149,7 @@ section {
   background-color: var(--white);
   border-color: var(--primary);
   color: var(--primary);
-  transform: translateY(-2px);
+  transform: translateY(-2px) scale(1.05);
 }
 
 /* Hero Section */
@@ -209,8 +209,27 @@ section {
   background: var(--bg-alt);
   border-radius: 30px;
   padding: 15px;
-  box-shadow: var(--shadow-lg);
+  box-shadow: 0 0 30px #f5a623;
   border: 1px solid var(--border);
+  position: relative;
+  z-index: 2;
+  animation: float 4s ease-in-out infinite;
+  transform: rotate(3deg);
+  transition: var(--transition);
+}
+
+.image-glow-backdrop {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 350px;
+  height: 350px;
+  background: var(--primary);
+  filter: blur(100px);
+  opacity: 0.4;
+  border-radius: 50%;
+  z-index: 1;
 }
 
 .image-card img {
@@ -348,6 +367,11 @@ footer {
 
 .animate-fade-in {
   animation: fadeInUp 0.8s ease-out forwards;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0) rotate(3deg); }
+  50% { transform: translateY(-15px) rotate(5deg); }
 }
 
 /* responsive - basic desktop focus as requested */
