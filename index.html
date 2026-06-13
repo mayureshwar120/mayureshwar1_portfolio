@@ -25,17 +25,51 @@
   <section class="hero">
     <div class="hero-content animate-fade-in">
       <span class="hero-tag">Available for Internships & Full-Time Jobs</span>
-      <h1>I'm <span>Mayureshwar</span><br>Pawar</h1>
-      <p>Aspiring Data Analyst and C++ Programmer dedicated to solving complex problems and uncovering insights through data-driven solutions.</p>
+      <h1>I'm Mayureshwar Pawar</h1>
+      <div class="typing-container">
+        I'm a <span id="typing-text"></span><span class="cursor">|</span>
+      </div>
+      <p>Problem solver and Aspiring Data Analyst dedicated to uncovering insights through data-driven solutions.</p>
+      
+      <div class="stats-row">
+        <div class="stat-item">
+          <span class="stat-num">3+</span>
+          <span class="stat-label">Projects Completed</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-num">1+</span>
+          <span class="stat-label">Years of Learning</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-num">5+</span>
+          <span class="stat-label">Tech Skills</span>
+        </div>
+      </div>
+
       <div class="btn-group">
         <a href="project.html" class="btn btn-primary">View Projects</a>
         <a href="contact.html" class="btn btn-secondary">Contact Me</a>
-        <a href="./Mayureshwar_Pawar_CV (1).docx" download class="btn btn-secondary">Download Resume</a>
+        <a href="./Mayureshwar_Pawar_CV (1).docx" download class="btn btn-secondary btn-resume">Download Resume</a>
       </div>
     </div>
     <div class="hero-image animate-fade-in">
-      <div class="image-card">
-        <img src="i1.jpg" alt="Mayureshwar Pawar">
+      <div class="cutout-container">
+        <img src="nobackround.png" alt="Mayureshwar Pawar" class="photo-cutout">
+        
+        <div class="float-badge b1" style="animation-delay: 0s;">
+          <span>📊</span> Data Analysis
+        </div>
+        <div class="float-badge b2" style="animation-delay: 0.8s;">
+          <span>💻</span> C++ Dev
+        </div>
+        <div class="float-badge b3" style="animation-delay: 1.6s;">
+          <span>🧠</span> Problem Solver
+        </div>
+        <div class="float-badge b4" style="animation-delay: 2.4s;">
+          <span>🗄️</span> SQL & Python
+        </div>
       </div>
     </div>
   </section>
@@ -118,6 +152,42 @@
   </div>
   <p style="font-size: 0.85rem; color: var(--text-muted);">&copy; 2026 Mayureshwar Pawar. All rights reserved.</p>
 </footer>
+
+<script>
+  const textElement = document.getElementById('typing-text');
+  const phrases = ["Data Analyst", "C++ Developer", "Problem Solver"];
+  let phraseIndex = 0;
+  let charIndex = 0;
+  let isDeleting = false;
+  let typeSpeed = 100;
+
+  function type() {
+    const currentPhrase = phrases[phraseIndex];
+    
+    if (isDeleting) {
+      charIndex--;
+      typeSpeed = 50;
+    } else {
+      charIndex++;
+      typeSpeed = 100;
+    }
+
+    textElement.textContent = currentPhrase.substring(0, charIndex);
+
+    if (!isDeleting && charIndex === currentPhrase.length) {
+      isDeleting = true;
+      typeSpeed = 1500; // Pause at end
+    } else if (isDeleting && charIndex === 0) {
+      isDeleting = false;
+      phraseIndex = (phraseIndex + 1) % phrases.length;
+      typeSpeed = 500; // Pause before typing next
+    }
+
+    setTimeout(type, typeSpeed);
+  }
+
+  document.addEventListener('DOMContentLoaded', type);
+</script>
 
 </body>
 </html>
