@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Certificates | Mayureshwar Pawar</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="logo">PORTFOLIO<span>.</span></div>
+  <nav>
+    <ul>
+      <li><a href="index.html" class="nav-link">Home</a></li>
+      <li><a href="aboutme.html" class="nav-link">About</a></li>
+      <li><a href="skills.html" class="nav-link">Skills</a></li>
+      <li><a href="certificates.html" class="nav-link active">Certificates</a></li>
+      <li><a href="project.html" class="nav-link">Projects</a></li>
+      <li><a href="contact.html" class="nav-link">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <section class="certificates-hero" style="padding-top: 5rem; padding-bottom: 2rem; text-align: center;">
+    <div class="animate-fade-in">
+      <h1 class="heading-about" style="display: block; margin: 0 auto 1.5rem auto;">My Certificates</h1>
+      <p style="color: #64748b; font-size: 1.1rem;">Verified credentials and achievements</p>
+      <div style="width: 60px; height: 4px; background: #f5a623; margin: 1.5rem auto; border-radius: 2px;"></div>
+    </div>
+  </section>
+
+  <section class="certificates-gallery" style="padding-top: 0;">
+    <div class="filter-row animate-fade-in">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="certification">Certifications</button>
+      <button class="filter-btn" data-filter="award">Awards</button>
+    </div>
+
+    <div class="grid-3" id="certificates-grid">
+      <!-- 1. Datathon -->
+      <div class="cert-card" data-category="certification">
+        <div class="cert-img-area">
+          <img src="certificatets previews/datathon.png" alt="Datathon Preview">
+        </div>
+        <div class="cert-info">
+          <h3>Datathon</h3>
+          <p class="cert-issuer">MITAOE | 2026</p>
+          <div class="cert-footer">
+            <span class="pill pill-certification">Achievement</span>
+            <button class="btn-cert-view" onclick="openModal('certificates/datathone participation.pdf')">View Certificate</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- 2. NASSCOM + FutureSkills Prime -->
+      <div class="cert-card" data-category="certification">
+        <div class="cert-img-area">
+          <img src="certificatets previews/nasscom+futureskill.png" alt="NASSCOM + FutureSkills Prime Preview">
+        </div>
+        <div class="cert-info">
+          <h3>NASSCOM + FutureSkills Prime</h3>
+          <p class="cert-issuer">NASSCOM Foundation | 2023</p>
+          <div class="cert-footer">
+            <span class="pill pill-certification">Certification</span>
+            <button class="btn-cert-view" onclick="openModal('certificates/nasscome + futureskill prime.pdf')">View Certificate</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- 3. Python Essential 1 -->
+      <div class="cert-card" data-category="certification">
+        <div class="cert-img-area">
+          <img src="certificatets previews/python essential 1-cysco.png" alt="Python Essential 1 Preview">
+        </div>
+        <div class="cert-info">
+          <h3>Python Essential 1</h3>
+          <p class="cert-issuer">Cisco Networking Academy | 2023</p>
+          <div class="cert-footer">
+            <span class="pill pill-certification">Certification</span>
+            <button class="btn-cert-view" onclick="openModal('certificates/Python_Essentials_1_certificate_mayursakhi6-gmail-com_99d26bb0-4130-4e52-83c9-53f289fd8d54.pdf')">View Certificate</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- 4. Python Essential 2 -->
+      <div class="cert-card" data-category="certification">
+        <div class="cert-img-area">
+          <img src="certificatets previews/python essential 2-cysco.png" alt="Python Essential 2 Preview">
+        </div>
+        <div class="cert-info">
+          <h3>Python Essential 2</h3>
+          <p class="cert-issuer">Cisco Networking Academy | 2023</p>
+          <div class="cert-footer">
+            <span class="pill pill-certification">Certification</span>
+            <button class="btn-cert-view" onclick="openModal('certificates/Python_Essentials_2_certificate_mayursakhi6-gmail-com_fa8a78d2-c033-4a3b-b2e7-76ad53d83d2d.pdf')">View Certificate</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- 5. AI Fluency - Framework & Foundation -->
+      <div class="cert-card" data-category="certification">
+        <div class="cert-img-area">
+          <img src="certificatets previews/AI fluency - framwork & foundation.png" alt="AI Fluency - Framework & Foundation Preview">
+        </div>
+        <div class="cert-info">
+          <h3>AI fluency - framwork & foundation</h3>
+          <p class="cert-issuer">Anthropic | 2024</p>
+          <div class="cert-footer">
+            <span class="pill pill-certification">Certification</span>
+            <button class="btn-cert-view" onclick="openModal('certificates/antropic1.pdf')">View Certificate</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- 6. AI Fluency for Nonprofits -->
+      <div class="cert-card" data-category="certification">
+        <div class="cert-img-area">
+          <img src="certificatets previews/AI fluency for nonprofits.png" alt="AI Fluency for Nonprofits Preview">
+        </div>
+        <div class="cert-info">
+          <h3>AI fluency for nonprofits</h3>
+          <p class="cert-issuer">Anthropic | 2024</p>
+          <div class="cert-footer">
+            <span class="pill pill-certification">Certification</span>
+            <button class="btn-cert-view" onclick="openModal('certificates/antropic2.pdf')">View Certificate</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- 7. AI Fluency for Students -->
+      <div class="cert-card" data-category="certification">
+        <div class="cert-img-area">
+          <img src="certificatets previews/AI fluency for students.png" alt="AI Fluency for Students Preview">
+        </div>
+        <div class="cert-info">
+          <h3>AI fluency for students</h3>
+          <p class="cert-issuer">Anthropic | 2024</p>
+          <div class="cert-footer">
+            <span class="pill pill-certification">Certification</span>
+            <button class="btn-cert-view" onclick="openModal('certificates/antropic3.pdf')">View Certificate</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- 8. Anthropic Claude 101 -->
+      <div class="cert-card" data-category="certification">
+        <div class="cert-img-area">
+          <img src="certificatets previews/antropic claude 101.png" alt="Anthropic Claude 101 Preview">
+        </div>
+        <div class="cert-info">
+          <h3>antropic claude 101</h3>
+          <p class="cert-issuer">Anthropic | 2024</p>
+          <div class="cert-footer">
+            <span class="pill pill-certification">Certification</span>
+            <button class="btn-cert-view" onclick="openModal('certificates/antropic4.pdf')">View Certificate</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- 9. Apply AI - Analyze Customer Reviews -->
+      <div class="cert-card" data-category="certification">
+        <div class="cert-img-area">
+          <img src="certificatets previews/Aply AI -analyse customer reviews.png" alt="Apply AI - Analyze Customer Reviews Preview">
+        </div>
+        <div class="cert-info">
+          <h3>Aply AI -analyse customer reviews</h3>
+          <p class="cert-issuer">IBM SkillsBuild | 2023</p>
+          <div class="cert-footer">
+            <span class="pill pill-certification">Certification</span>
+            <button class="btn-cert-view" onclick="openModal('certificates/Apply AI Analyze Customer Reviews.pdf')">View Certificate</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- 10. IBM Skill Build - Data Visualization -->
+      <div class="cert-card" data-category="certification">
+        <div class="cert-img-area">
+          <img src="certificatets previews/IBM skill build - The importance of data visualization.png" alt="IBM Skill Build - Data Visualization Preview">
+        </div>
+        <div class="cert-info">
+          <h3>IBM skill build - The importance of data visualization</h3>
+          <p class="cert-issuer">IBM SkillsBuild | 2023</p>
+          <div class="cert-footer">
+            <span class="pill pill-certification">Certification</span>
+            <button class="btn-cert-view" onclick="openModal('certificates/Completion Certificate _ SkillsBuild.pdf')">View Certificate</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- 11. Data Analytics Essentials -->
+      <div class="cert-card" data-category="certification">
+        <div class="cert-img-area">
+          <img src="certificatets previews/data analytics essentials - mit aoe.png" alt="Data Analytics Essentials Preview">
+        </div>
+        <div class="cert-info">
+          <h3>data analytics essentials - mit aoe</h3>
+          <p class="cert-issuer">MITAOE | 2024</p>
+          <div class="cert-footer">
+            <span class="pill pill-certification">Certification</span>
+            <button class="btn-cert-view" onclick="openModal('certificates/Data Analytics Essentials.pdf')">View Certificate</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- 12. Introduction to Modern AI -->
+      <div class="cert-card" data-category="certification">
+        <div class="cert-img-area">
+          <img src="certificatets previews/introdiction to modern AI - mit aoe.png" alt="Introduction to Modern AI Preview">
+        </div>
+        <div class="cert-info">
+          <h3>introdiction to modern AI - mit aoe</h3>
+          <p class="cert-issuer">MITAOE | 2024</p>
+          <div class="cert-footer">
+            <span class="pill pill-certification">Certification</span>
+            <button class="btn-cert-view" onclick="openModal('certificates/Introduction to Modern AI.pdf')">View Certificate</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- 13. Machine Learning Fundamentals -->
+      <div class="cert-card" data-category="certification">
+        <div class="cert-img-area">
+          <img src="certificatets previews/machine learning fundamentals- infosys.png" alt="Machine Learning Fundamentals Preview">
+        </div>
+        <div class="cert-info">
+          <h3>machine learning fundamentals- infosys</h3>
+          <p class="cert-issuer">Infosys Springboard | 2023</p>
+          <div class="cert-footer">
+            <span class="pill pill-certification">Certification</span>
+            <button class="btn-cert-view" onclick="openModal('certificates/machine learning foundation infosysy.pdf')">View Certificate</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- 14. Machine Learning with Python 2022 -->
+      <div class="cert-card" data-category="certification">
+        <div class="cert-img-area">
+          <img src="certificatets previews/machine learning with python 2022-infosys.png" alt="Machine Learning with Python 2022 Preview">
+        </div>
+        <div class="cert-info">
+          <h3>machine learning with python 2022-infosys</h3>
+          <p class="cert-issuer">Infosys Springboard | 2022</p>
+          <div class="cert-footer">
+            <span class="pill pill-certification">Certification</span>
+            <button class="btn-cert-view" onclick="openModal('certificates/machine learning with python infosys.pdf')">View Certificate</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div style="text-align: center; margin-top: 5rem; padding-bottom: 5rem;">
+      <p style="font-style: italic; color: #888;">More certifications being added as I complete them 🚀</p>
+    </div>
+  </section>
+
+  <!-- Next Page Navigation -->
+  <section class="next-page-nav animate-fade-in">
+    <a href="project.html" class="next-page-link">
+      <span class="next-label">My Work</span>
+      <div class="next-title">Projects <span>→</span></div>
+    </a>
+  </section>
+</main>
+
+<footer>
+  <div class="footer-content">
+    <div class="logo">PORTFOLIO<span>.</span></div>
+    <p>Let's build something incredible together.</p>
+    <div class="social-links">
+      <a href="https://github.com/mayureshwar120" target="_blank" class="social-icon">🐙</a>
+      <a href="https://www.linkedin.com/in/mayureshwar-pawar-181ab7392/" target="_blank" class="social-icon">💼</a>
+      <a href="mailto:mayursakhi6@gmail.com" class="social-icon">✉️</a>
+    </div>
+  </div>
+  <p style="font-size: 0.85rem; color: var(--text-muted);">&copy; 2026 Mayureshwar Pawar. All rights reserved.</p>
+</footer>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    const certCards = document.querySelectorAll('.cert-card');
+
+    filterBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        // Update active button
+        filterBtns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+
+        const filter = btn.getAttribute('data-filter');
+
+        certCards.forEach(card => {
+          if (filter === 'all' || card.getAttribute('data-category') === filter) {
+            card.style.display = 'flex';
+            card.style.animation = 'fadeInUp 0.5s ease forwards';
+          } else {
+            card.style.display = 'none';
+          }
+        });
+      });
+    });
+
+    // Modal Closing Logic
+    const closeModal = document.querySelector('.close-modal');
+    const modal = document.getElementById('certModal');
+
+    if (closeModal) {
+      closeModal.onclick = function() {
+        modal.style.display = 'none';
+        document.getElementById('certFrame').src = '';
+        document.body.style.overflow = 'auto';
+      }
+    }
+
+    window.onclick = function(event) {
+      if (event.target == modal) {
+        modal.style.display = 'none';
+        document.getElementById('certFrame').src = '';
+        document.body.style.overflow = 'auto';
+      }
+    }
+  });
+
+  function openModal(filePath) {
+    const modal = document.getElementById('certModal');
+    const frame = document.getElementById('certFrame');
+    frame.src = filePath;
+    modal.style.display = 'flex';
+    document.body.style.overflow = 'hidden';
+  }
+</script>
+
+<!-- Certificate Modal -->
+<div id="certModal" class="modal">
+  <div class="modal-content">
+    <span class="close-modal">&times;</span>
+    <iframe id="certFrame" src="" frameborder="0" style="width: 100%; height: 80vh; border-radius: 10px;"></iframe>
+  </div>
+</div>
+
+</body>
+</html>

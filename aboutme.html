@@ -15,6 +15,7 @@
       <li><a href="index.html" class="nav-link">Home</a></li>
       <li><a href="aboutme.html" class="nav-link active">About</a></li>
       <li><a href="skills.html" class="nav-link">Skills</a></li>
+      <li><a href="certificates.html" class="nav-link">Certificates</a></li>
       <li><a href="project.html" class="nav-link">Projects</a></li>
       <li><a href="contact.html" class="nav-link">Contact</a></li>
     </ul>
@@ -22,69 +23,164 @@
 </header>
 
 <main>
-  <section class="about-hero hero">
-    <div class="hero-content animate-fade-in">
-      <div class="section-header">
-        <h2>About Me</h2>
-      </div>
-      <p>Hello! I'm <strong>Mayureshwar Pawar</strong>, an aspiring Data Analyst passionate about transforming raw data into meaningful insights. I enjoy solving real-world problems and building data-driven tools that make an impact.</p>
+  <!-- Hero Section -->
+  <section class="about-hero animate-fade-in">
+    <div class="hero-content">
+      <span class="label-gold">Get to know me</span>
+      <h1 class="heading-about">About Me</h1>
+      <p>Hello! I'm <strong>Mayureshwar Pawar</strong>, an aspiring Software Engineer passionate about building innovative software solutions, modern web applications, and intuitive user experiences. I enjoy transforming ideas into impactful products through clean code, problem-solving, and continuous learning.</p>
       
-      <p>With a solid foundation in <strong>C++</strong> and a growing expertise in <strong>Python, SQL, and Power BI</strong>, I focus on bridging the gap between technical implementation and business intelligence.</p>
+      <p>I develop <strong>web applications</strong>, design <strong>modern UI/UX</strong>, and build <strong>responsive websites</strong>. My technical toolkit includes <strong>C++, Python, JavaScript</strong>, and modern web technologies.</p>
+      
+      <p class="bio-italic">Bridging the gap between creative design and technical implementation — let's build something amazing together.</p>
 
       <div class="btn-group">
-        <a href="contact.html" class="btn btn-primary">Get in Touch</a>
+        <a href="contact.html" class="btn btn-primary" style="background:#f5a623; color:#0a0a0f; border-radius:10px;">Get in Touch →</a>
       </div>
     </div>
-    <div class="hero-image animate-fade-in">
-      <div class="image-card">
-        <img src="mayur.jpg" alt="Mayureshwar Pawar">
-      </div>
-    </div>
-  </section>
-
-  <section class="achievements-section" style="background: var(--bg-alt);">
-    <div class="section-header">
-      <h2>Achievements & Certifications</h2>
-      <p>Continuous learning and recognition in technical fields.</p>
-    </div>
-    <div class="achievement-list">
-      <div class="card-premium">
-        <h3>Google Data Analytics Professional</h3>
-        <p style="color: var(--text-muted); font-size: 0.9rem;">Coursera | 2024</p>
-        <p>Comprehensive training on data cleaning, analysis, visualization, and R programming.</p>
-      </div>
-      <div class="card-premium">
-        <h3>SQL for Data Science</h3>
-        <p style="color: var(--text-muted); font-size: 0.9rem;">DeepLearning.AI | 2023</p>
-        <p>Advanced SQL techniques for querying large datasets and performance optimization.</p>
-      </div>
-      <div class="card-premium">
-        <h3>Outstanding Student Award</h3>
-        <p style="color: var(--text-muted); font-size: 0.9rem;">MIT Academy of Engineering | 2023</p>
-        <p>Recognized for academic excellence and contribution to technical projects.</p>
-      </div>
-      <div class="card-premium">
-        <h3>C++ Hackathon Winner</h3>
-        <p style="color: var(--text-muted); font-size: 0.9rem;">TechFest 2023</p>
-        <p>First place in a competitive C++ programming challenge focused on algorithms.</p>
+    <div class="hero-image">
+      <div class="photo-wrapper">
+        <div class="photo-frame-accent"></div>
+        <div class="photo-card">
+          <img src="mayur.jpg" alt="Mayureshwar Pawar">
+        </div>
       </div>
     </div>
   </section>
 
+  <!-- Education Section -->
   <section class="education-section">
-    <div class="section-header">
+    <div class="section-header" style="border-left: 4px solid #f5a623; padding-left: 14px;">
       <h2>Education & Coursework</h2>
     </div>
-    <div class="card-premium">
-      <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 1rem;">
-        <div>
-          <h3 style="margin-bottom: 0.2rem;">MIT Academy of Engineering</h3>
-          <p style="color: var(--primary); font-weight: 600;">Bachelor of Technology in Computer Science</p>
+    
+    <div class="education-timeline">
+      <div class="edu-item animate-fade-in">
+        <div class="edu-dot"></div>
+        <div class="timeline-card">
+          <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 0.5rem;">
+            <h3>MIT Academy of Engineering (MITAOE), Pune</h3>
+            <span class="timeline-date">2025 — 2029</span>
+          </div>
+          <p style="color: var(--primary); font-weight: 600; margin-bottom: 0.5rem;">Bachelor of Technology in Computer Science & Engineering (AI & ML)</p>
+          <p style="font-size: 0.95rem;">Key Coursework: Data Structures & Algorithms, DBMS, OOP, Artificial Intelligence, Machine Learning, Web Development, Operating Systems</p>
+          <div class="pill-container">
+            <span class="pill pill-course">DSA</span>
+            <span class="pill pill-course">DBMS</span>
+            <span class="pill pill-course">AI/ML</span>
+            <span class="pill pill-course">Web Dev</span>
+            <span class="pill pill-course">OOP</span>
+            <span class="pill pill-course">Operating Systems</span>
+          </div>
         </div>
-        <p style="font-weight: 500; font-size: 0.9rem; background: #e2e8f0; padding: 0.2rem 0.8rem; border-radius: 20px;">2021 — 2025</p>
       </div>
-      <p>Key Coursework: Data Structures, Analysis of Algorithms, Database Management Systems, Data Mining, and Statistical Methods.</p>
     </div>
+  </section>
+
+  <!-- Achievements & Certifications Timeline -->
+  <section class="achievements-timeline" style="background: var(--bg-alt); padding-top: 5rem; padding-bottom: 5rem;">
+    <div class="section-header" style="border-left: 4px solid #f5a623; padding-left: 14px; margin-bottom: 4rem;">
+      <h2>Achievements & Certifications</h2>
+    </div>
+
+    <div class="timeline-container">
+      <div class="timeline-line"></div>
+      
+      <!-- Entry 1 -->
+      <div class="timeline-item left animate-fade-in">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card">
+          <h3>📊 Datathon 2026 Participant</h3>
+          <p class="timeline-date">MITAOE, Pune | 2026</p>
+          <p>Participated in Datathon 2026. Worked on data analysis and complex problem-solving challenges in a competitive environment.</p>
+          <div class="pill-container">
+            <span class="pill pill-award">Certificate Available</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Entry 2 -->
+      <div class="timeline-item right animate-fade-in" style="animation-delay: 0.2s;">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card">
+          <h3>👨‍💻 CodeAlpha Internship</h3>
+          <p class="timeline-date">CodeAlpha | 2025</p>
+          <p>Successfully completed internship at CodeAlpha. Gained practical experience in software development and project cycles.</p>
+          <div class="pill-container">
+            <span class="pill pill-award">Internship Certificate</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Certificates Section -->
+  <section class="featured-certificates">
+    <div class="about-featured-header">
+      <div>
+        <h2 style="font-size: 2rem; font-weight: 700;">Featured Certificates</h2>
+        <p style="color: #888;">A few highlights — view all in <a href="certificates.html" style="color: #f5a623; font-weight: 600;">Certificates page →</a></p>
+      </div>
+    </div>
+
+    <div class="certificates-grid">
+      <!-- Card 1 -->
+      <div class="cert-card">
+        <div class="cert-img-area">
+          <img src="certificatets previews/datathon.png" alt="Datathon 2026 Preview">
+        </div>
+        <div class="cert-info">
+          <h3>Datathon 2026 Certificate</h3>
+          <p class="cert-issuer">MITAOE, Pune | 2026</p>
+          <div class="cert-footer">
+            <span class="pill pill-certification">Participation</span>
+            <button class="btn-cert-view" onclick="openModal('certificates/datathone participation.pdf')">View</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="cert-card">
+        <div class="cert-img-area">
+          <img src="certificatets previews/codealphaofferletter.png" alt="CodeAlpha Offer Letter Preview">
+        </div>
+        <div class="cert-info">
+          <h3>CodeAlpha Offer Letter</h3>
+          <p class="cert-issuer">CodeAlpha | 2025</p>
+          <div class="cert-footer">
+            <span class="pill pill-certification">Internship Offer</span>
+            <button class="btn-cert-view" onclick="openModal('certificates/Offer_Letter_CodeAlpha.pdf')">View</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="cert-card">
+        <div class="cert-img-area">
+          <img src="certificatets previews/nasscom+futureskill.png" alt="NASSCOM Preview">
+        </div>
+        <div class="cert-info">
+          <h3>NASSCOM + FutureSkills Prime</h3>
+          <p class="cert-issuer">NASSCOM Foundation</p>
+          <div class="cert-footer">
+            <span class="pill pill-certification">Certification</span>
+            <button class="btn-cert-view" onclick="openModal('certificates/nasscome + futureskill prime.pdf')">View</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div style="text-align: center; margin-top: 4rem;">
+      <a href="certificates.html" class="btn btn-primary" style="background:#f5a623; color:#0a0a0f; border-radius:10px;">View All Certificates →</a>
+    </div>
+  </section>
+
+  <!-- Next Page Navigation -->
+  <section class="next-page-nav animate-fade-in">
+    <a href="skills.html" class="next-page-link">
+      <span class="next-label">What I can do</span>
+      <div class="next-title">Technical Skills <span>→</span></div>
+    </a>
   </section>
 </main>
 
@@ -101,6 +197,42 @@
   <p style="font-size: 0.85rem; color: var(--text-muted);">&copy; 2026 Mayureshwar Pawar. All rights reserved.</p>
 </footer>
 
+<!-- Certificate Modal -->
+<div id="certModal" class="modal">
+  <div class="modal-content">
+    <span class="close-modal">&times;</span>
+    <iframe id="certFrame" src="" frameborder="0" style="width: 100%; height: 80vh; border-radius: 10px;"></iframe>
+  </div>
+</div>
+
+<script>
+  function openModal(filePath) {
+    const modal = document.getElementById('certModal');
+    const frame = document.getElementById('certFrame');
+    frame.src = filePath;
+    modal.style.display = 'flex';
+    document.body.style.overflow = 'hidden';
+  }
+
+  const closeModal = document.querySelector('.close-modal');
+  const modal = document.getElementById('certModal');
+
+  if (closeModal) {
+    closeModal.onclick = function() {
+      modal.style.display = 'none';
+      document.getElementById('certFrame').src = '';
+      document.body.style.overflow = 'auto';
+    }
+  }
+
+  window.onclick = function(event) {
+    if (event.target == modal) {
+      modal.style.display = 'none';
+      document.getElementById('certFrame').src = '';
+      document.body.style.overflow = 'auto';
+    }
+  }
+</script>
+
 </body>
 </html>
-
