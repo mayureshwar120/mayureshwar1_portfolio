@@ -52,7 +52,13 @@
       <div class="btn-group">
         <a href="project.html" class="btn btn-primary">View Projects →</a>
         <a href="contact.html" class="btn btn-secondary">Contact Me</a>
-        <a href="./Mayureshwar_Pawar_CV (1).docx" download class="btn btn-resume">↓ Download Resume</a>
+        <div class="resume-btn-container">
+          <button class="btn btn-resume" type="button">📄 Resume</button>
+          <div class="resume-hover-options">
+            <a href="./Mayureshwar_Pawar_CV (1).pdf" target="_blank" class="resume-opt-btn view-opt" id="viewResumeLink">👁️ View</a>
+            <a href="./Mayureshwar_Pawar_CV (1).pdf" download class="resume-opt-btn download-opt">↓ Download</a>
+          </div>
+        </div>
       </div>
     </div>
     <div class="hero-image animate-fade-in">
@@ -195,8 +201,70 @@
     setTimeout(type, typeSpeed);
   }
 
-  document.addEventListener('DOMContentLoaded', type);
+  document.addEventListener('DOMContentLoaded', () => {
+    type();
+
+    // Toggle dropdown stay on click
+    const resumeBtn = document.querySelector('.btn-resume');
+    const resumeContainer = document.querySelector('.resume-btn-container');
+
+    if (resumeBtn && resumeContainer) {
+      resumeBtn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        resumeContainer.classList.toggle('clicked');
+      });
+
+      // Close dropdown when clicking outside
+      document.addEventListener('click', (e) => {
+        if (!resumeContainer.contains(e.target)) {
+          resumeContainer.classList.remove('clicked');
+        }
+      });
+    }
+
+    // Modal logic for Resume
+    const resumeModal = document.getElementById('resumeModal');
+    const resumeFrame = document.getElementById('resumeFrame');
+    const viewResumeLink = document.getElementById('viewResumeLink');
+    const closeResume = resumeModal ? resumeModal.querySelector('.close-modal') : null;
+
+    if (viewResumeLink && resumeModal && resumeFrame) {
+      viewResumeLink.addEventListener('click', (e) => {
+        e.preventDefault();
+        e.stopPropagation();
+        
+        // Open modal
+        resumeFrame.src = viewResumeLink.getAttribute('href');
+        resumeModal.style.display = 'flex';
+        document.body.style.overflow = 'hidden';
+      });
+    }
+
+    if (closeResume && resumeModal && resumeFrame) {
+      closeResume.onclick = function() {
+        resumeModal.style.display = 'none';
+        resumeFrame.src = '';
+        document.body.style.overflow = 'auto';
+      }
+    }
+
+    window.addEventListener('click', (event) => {
+      if (event.target == resumeModal) {
+        resumeModal.style.display = 'none';
+        resumeFrame.src = '';
+        document.body.style.overflow = 'auto';
+      }
+    });
+  });
 </script>
+
+<!-- Resume Modal -->
+<div id="resumeModal" class="modal">
+  <div class="modal-content">
+    <span class="close-modal">&times;</span>
+    <iframe id="resumeFrame" src="" frameborder="0" style="width: 100%; height: 80vh; border-radius: 10px;"></iframe>
+  </div>
+</div>
 
 </body>
 </html>
